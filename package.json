@@ -1,0 +1,38 @@
+{
+  "name": "rizon",
+  "version": "0.0.3",
+  "description": "Get Golden Hour times from the command line",
+  "main": "rizon.js",
+  "bin": {
+    "rizon": "rizon.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samisking/npm-rizon.git"
+  },
+  "keywords": [
+    "rizon",
+    "golden",
+    "hour",
+    "twilight",
+    "sunrise",
+    "sunset"
+  ],
+  "author": "Sam King <mail@samking.co> (http://samking.co)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/samisking/npm-rizon/issues"
+  },
+  "homepage": "https://github.com/samisking/npm-rizon#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "easy-table": "^1.0.0",
+    "moment-timezone": "^0.4.0",
+    "sqlite3": "^3.1.0",
+    "suncalc": "^1.6.0",
+    "yargs": "^3.26.0"
+  }
+}
