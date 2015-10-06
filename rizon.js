@@ -5,7 +5,7 @@ var moment = require('moment-timezone');
 var sqlite3 = require('sqlite3').verbose();
 var Table = require('easy-table');
 var colors = require('colors');
-var suntimes = require('./lib/suntimes');
+var suntimes = require(__dirname+'/lib/suntimes');
 var argv = require('yargs')
     .usage('Usage: rizon [options] [location name]')
     .example('rizon boston', 'shows the next golden hour in boston local time')
@@ -42,7 +42,7 @@ var now = moment(),
 
 
 // Load the cities database
-var db = new sqlite3.Database('./data/cities.db');
+var db = new sqlite3.Database(__dirname+'/data/cities.db');
 
 
 // Run this shit
